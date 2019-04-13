@@ -4,16 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Conversão Temperatura</title>
+    <title>Churrasculadora</title>
 </head>
 <body>
-    <h1>Conversão Moneitaria</h1>
-    <form name="frmTemp">
-        <input type="text" placeholder="Celsius" name="valorCelsius">
-        <p><input type="button" value="Converter para Fahrenheit" onclick="converterTemp()"></p>
-        <input type="text" placeholder="fahrenheit" name="valorFahrenheit">
+    <h1>Churrasculadora</h1>
+    <form name="frmChurrasco">
+        <input type="text" placeholder="Quantidade de Homens" name="valorHomens">
+        <p><input type="text" placeholder="Quantidade de Mulheres" name="valorMulheres"></p>
+        <p><input type="text" placeholder="Quantidade de Crianças" name="valorCriancas"></p>
+        <p><input type="text" placeholder="Quantidade de Carne" name="valorKGCarne"></p>
+        <p><input type="text" placeholder="Quantidade de Cerveja" name="valorCerveja"></p>
+        <p><input type="text" placeholder="Quantidade de Refrigerante" name="valorRefrigerante"></p>
+        <p><input type="button" placeholder="calcular Valor" onclick="calcularResultado()"></p>
+        <input type="text" placeholder="Resultado" name="valorResultado" disabled>    
+        <input type="text" value="Valor Carne" name="valorTotalCarne" disabled>
+        <input type="text" value="Valor Cerveja" name="valorTotalCerveja" disabled>
+        <input type="text" value="Valor Refrigerante" name="valorTotalRefrigerante" disabled>
+        <p><input type="text" value="Divisao Homem e Mulher" name="valorHomemMulher"></p>
     </form>
-    <script src="conv.js"></script>
-
+    <script src="Churras.js"></script>
 </body>
 </html>
